@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,14 +57,13 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="alE-4P-bHZ">
                                         <rect key="frame" x="0.0" y="358" width="374" height="338"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podaj Dane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41L-Uv-NaJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logowanie do systemu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41L-Uv-NaJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333314"/>
-                                                <color key="backgroundColor" red="0.44705882352941173" green="0.24705882352941178" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qF7-2C-TQ2">
@@ -89,10 +88,10 @@
                                                 <rect key="frame" x="0.0" y="261.66666666666663" width="374" height="76.333333333333371"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-wz-SGU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="76.333333333333371"/>
                                                         <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                                        <state key="normal" title="Zarejestruj się">
+                                                        <state key="normal" title="Rejestracja">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -103,6 +102,28 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
+                                                        <connections>
+                                                            <segue destination="MtM-tT-GHn" kind="showDetail" id="hei-Th-a42"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0T-U7-wQc">
+                                                        <rect key="frame" x="192" y="0.0" width="182" height="76.333333333333371"/>
+                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                        <state key="normal" title="Zaloguj">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <segue destination="qA3-tK-V3f" kind="show" id="HkL-CN-NVe"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -143,10 +164,83 @@
             </objects>
             <point key="canvasLocation" x="-258" y="89"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TPP-3b-uHn">
+            <objects>
+                <navigationController id="qA3-tK-V3f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXN-GU-0AI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jbz-NW-P1Y" kind="relationship" relationship="rootViewController" id="0Cg-3b-0Yf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKC-RH-eL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="91"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="ueW-AA-9GA">
+            <objects>
+                <viewController id="jbz-NW-P1Y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vf3-G1-bzm"/>
+                        <viewControllerLayoutGuide type="bottom" id="yTK-2Y-ryl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SrS-nf-2N5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CMW-Cs-WLg">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="a6k-Is-uMs">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a6k-Is-uMs" id="lsQ-3l-PUn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-p4-Gg9">
+                                                    <rect key="frame" x="8" y="8" width="398" height="80.666666666666671"/>
+                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xmZ-p4-Gg9" firstAttribute="leading" secondItem="lsQ-3l-PUn" secondAttribute="leadingMargin" id="ASX-bF-Gvw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xmZ-p4-Gg9" secondAttribute="trailing" id="MIj-3M-US5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xmZ-p4-Gg9" secondAttribute="bottom" id="Xpt-jO-Ynz"/>
+                                                <constraint firstItem="xmZ-p4-Gg9" firstAttribute="top" secondItem="lsQ-3l-PUn" secondAttribute="topMargin" id="jyK-Zf-uXw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ig-hO-c3I">
+                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="4yt-3U-0aj">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="p2H-kf-KSS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRY-5K-j9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669.5652173913045" y="89.673913043478265"/>
+        </scene>
+        <!--Reg UsersVC-->
         <scene sceneID="JWI-rU-IhS">
             <objects>
-                <viewController id="MtM-tT-GHn" sceneMemberID="viewController">
+                <viewController id="MtM-tT-GHn" customClass="RegUsersVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfA-JC-bQv"/>
                         <viewControllerLayoutGuide type="bottom" id="Xm3-6c-4s5"/>
@@ -192,12 +286,11 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podaj dane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdb-Jd-wGj">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="58.666666666666686"/>
-                                                <color key="backgroundColor" red="0.44705882352941173" green="0.24705882352941178" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pV9-u1-ZDB">
@@ -245,6 +338,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
+                                                        <connections>
+                                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="f9s-MR-eJw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-zT-8o0">
                                                         <rect key="frame" x="192" y="0.0" width="182" height="58.666666666666629"/>
@@ -307,4 +403,7 @@
     <resources>
         <image name="justitia" width="1920" height="1440"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="p2H-kf-KSS"/>
+    </inferredMetricsTieBreakers>
 </document>
