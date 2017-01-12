@@ -228,7 +228,7 @@
                     <navigationItem key="navigationItem" id="6ig-hO-c3I">
                         <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="4yt-3U-0aj">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="p2H-kf-KSS"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="r0r-4g-isT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -404,6 +404,6 @@
         <image name="justitia" width="1920" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p2H-kf-KSS"/>
+        <segue reference="r0r-4g-isT"/>
     </inferredMetricsTieBreakers>
 </document>
