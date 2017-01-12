@@ -56,8 +56,10 @@
 		157AB2A61E258F1600D02256 /* SIP Justyna */ = {
 			isa = PBXGroup;
 			children = (
+				157AB2BE1E258F6F00D02256 /* Model */,
+				157AB2BD1E258F6300D02256 /* View */,
+				157AB2BC1E258F5500D02256 /* Controller */,
 				157AB2A71E258F1600D02256 /* AppDelegate.swift */,
-				157AB2A91E258F1600D02256 /* ViewController.swift */,
 				157AB2AB1E258F1600D02256 /* Main.storyboard */,
 				157AB2B11E258F1600D02256 /* Assets.xcassets */,
 				157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */,
@@ -65,6 +67,28 @@
 				157AB2AE1E258F1600D02256 /* SIP_Justyna.xcdatamodeld */,
 			);
 			path = "SIP Justyna";
+			sourceTree = "<group>";
+		};
+		157AB2BC1E258F5500D02256 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				157AB2A91E258F1600D02256 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		157AB2BD1E258F6300D02256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		157AB2BE1E258F6F00D02256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +330,7 @@
 				157AB2BB1E258F1600D02256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

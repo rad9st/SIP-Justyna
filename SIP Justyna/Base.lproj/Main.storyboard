@@ -1,26 +1,310 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-bK-UEQ">
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cx7-ba-F1H">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="justitia" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-zk-gZ6">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Informacji Prawnej Justyna" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-fz-clC">
+                                                <rect key="frame" x="20" y="15" width="334" height="23"/>
+                                                <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="h6q-zk-gZ6" firstAttribute="top" secondItem="cx7-ba-F1H" secondAttribute="top" id="0sz-1W-U41"/>
+                                            <constraint firstAttribute="trailing" secondItem="h6q-zk-gZ6" secondAttribute="trailing" id="35w-Dh-ZqD"/>
+                                            <constraint firstItem="YoI-fz-clC" firstAttribute="top" secondItem="cx7-ba-F1H" secondAttribute="top" constant="15" id="CuF-D3-TyA"/>
+                                            <constraint firstItem="h6q-zk-gZ6" firstAttribute="leading" secondItem="cx7-ba-F1H" secondAttribute="leading" id="m6w-DG-MWB"/>
+                                            <constraint firstAttribute="bottom" secondItem="h6q-zk-gZ6" secondAttribute="bottom" id="sDT-7w-SIu"/>
+                                            <constraint firstItem="YoI-fz-clC" firstAttribute="leading" secondItem="cx7-ba-F1H" secondAttribute="leading" constant="20" id="tyd-1S-96s"/>
+                                            <constraint firstAttribute="trailing" secondItem="YoI-fz-clC" secondAttribute="trailing" constant="20" id="xAB-t0-yUa"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="alE-4P-bHZ">
+                                        <rect key="frame" x="0.0" y="358" width="374" height="338"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podaj Dane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41L-Uv-NaJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333314"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.24705882352941178" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qF7-2C-TQ2">
+                                                <rect key="frame" x="0.0" y="87.333333333333314" width="374" height="76.333333333333314"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ui7-40-34W">
+                                                <rect key="frame" x="0.0" y="174.66666666666663" width="374" height="76"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-P1-jg4">
+                                                <rect key="frame" x="0.0" y="261.66666666666663" width="374" height="76.333333333333371"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-wz-SGU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333371"/>
+                                                        <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                        <state key="normal" title="Zarejestruj się">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Jck-P1-jg4" firstAttribute="leading" secondItem="alE-4P-bHZ" secondAttribute="leading" id="4mF-5T-VjL"/>
+                                            <constraint firstAttribute="trailing" secondItem="41L-Uv-NaJ" secondAttribute="trailing" id="CtG-kT-hK7"/>
+                                            <constraint firstItem="ui7-40-34W" firstAttribute="leading" secondItem="alE-4P-bHZ" secondAttribute="leading" id="K0H-yz-ErZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="ui7-40-34W" secondAttribute="trailing" id="Otp-fK-KaM"/>
+                                            <constraint firstAttribute="trailing" secondItem="qF7-2C-TQ2" secondAttribute="trailing" id="QNS-PA-vcQ"/>
+                                            <constraint firstItem="qF7-2C-TQ2" firstAttribute="leading" secondItem="alE-4P-bHZ" secondAttribute="leading" id="hZJ-41-gOH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jck-P1-jg4" secondAttribute="trailing" id="pPt-oz-ei3"/>
+                                            <constraint firstItem="41L-Uv-NaJ" firstAttribute="leading" secondItem="alE-4P-bHZ" secondAttribute="leading" id="pmS-5X-yJI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="alE-4P-bHZ" firstAttribute="leading" secondItem="zMO-bK-UEQ" secondAttribute="leading" id="2wm-5X-6rI"/>
+                                    <constraint firstAttribute="bottom" secondItem="alE-4P-bHZ" secondAttribute="bottom" id="7NX-bf-1JL"/>
+                                    <constraint firstAttribute="trailing" secondItem="alE-4P-bHZ" secondAttribute="trailing" id="9bx-mQ-yRu"/>
+                                    <constraint firstAttribute="trailing" secondItem="cx7-ba-F1H" secondAttribute="trailing" id="TM3-CH-yNU"/>
+                                    <constraint firstItem="cx7-ba-F1H" firstAttribute="top" secondItem="zMO-bK-UEQ" secondAttribute="top" id="dhR-H8-5Ei"/>
+                                    <constraint firstItem="cx7-ba-F1H" firstAttribute="leading" secondItem="zMO-bK-UEQ" secondAttribute="leading" id="oLX-R4-o4S"/>
+                                    <constraint firstItem="alE-4P-bHZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cx7-ba-F1H" secondAttribute="bottom" id="vys-T1-gK5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.95686274509803915" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zMO-bK-UEQ" secondAttribute="bottom" constant="20" id="0Zi-Lf-u4R"/>
+                            <constraint firstItem="zMO-bK-UEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FTc-is-sew"/>
+                            <constraint firstItem="zMO-bK-UEQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RIa-Mw-UzS"/>
+                            <constraint firstItem="zMO-bK-UEQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sHx-8Q-SpY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-258" y="89"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JWI-rU-IhS">
+            <objects>
+                <viewController id="MtM-tT-GHn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bfA-JC-bQv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xm3-6c-4s5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dTc-96-dPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-0L-r3e">
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6U-jH-qqf">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="justitia" translatesAutoresizingMaskIntoConstraints="NO" id="x7b-r1-T9o">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Informacji Prawnej Justyna" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-FH-mKQ">
+                                                <rect key="frame" x="20" y="15" width="334" height="23"/>
+                                                <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="XPd-FH-mKQ" firstAttribute="top" secondItem="d6U-jH-qqf" secondAttribute="top" constant="15" id="9vk-mI-3kg"/>
+                                            <constraint firstItem="x7b-r1-T9o" firstAttribute="top" secondItem="d6U-jH-qqf" secondAttribute="top" id="DXV-rR-Io9"/>
+                                            <constraint firstItem="XPd-FH-mKQ" firstAttribute="leading" secondItem="d6U-jH-qqf" secondAttribute="leading" constant="20" id="Fow-SJ-g9f"/>
+                                            <constraint firstAttribute="trailing" secondItem="x7b-r1-T9o" secondAttribute="trailing" id="WCa-CW-K16"/>
+                                            <constraint firstItem="x7b-r1-T9o" firstAttribute="leading" secondItem="d6U-jH-qqf" secondAttribute="leading" id="kCs-sB-A25"/>
+                                            <constraint firstAttribute="bottom" secondItem="x7b-r1-T9o" secondAttribute="bottom" id="knJ-81-AzE"/>
+                                            <constraint firstAttribute="trailing" secondItem="XPd-FH-mKQ" secondAttribute="trailing" constant="20" id="ovI-yM-6KI"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-Na-Ucz">
+                                        <rect key="frame" x="0.0" y="358" width="374" height="338"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podaj dane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdb-Jd-wGj">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="58.666666666666686"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.24705882352941178" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pV9-u1-ZDB">
+                                                <rect key="frame" x="0.0" y="69.666666666666686" width="374" height="59"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NE7-D0-wis">
+                                                <rect key="frame" x="0.0" y="139.66666666666663" width="374" height="58.666666666666742"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="powtórz hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBk-72-1Ch">
+                                                <rect key="frame" x="0.0" y="209.33333333333337" width="374" height="59"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-wm-9I0">
+                                                <rect key="frame" x="0.0" y="279.33333333333337" width="374" height="58.666666666666629"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-Wc-gaL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="58.666666666666629"/>
+                                                        <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                        <state key="normal" title="Wróć">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-zT-8o0">
+                                                        <rect key="frame" x="192" y="0.0" width="182" height="58.666666666666629"/>
+                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                        <state key="normal" title="Zarejestruj się">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZCd-wm-9I0" secondAttribute="trailing" id="29o-PV-KRx"/>
+                                            <constraint firstItem="ZCd-wm-9I0" firstAttribute="leading" secondItem="oiF-Na-Ucz" secondAttribute="leading" id="5eF-Tu-Bm7"/>
+                                            <constraint firstAttribute="trailing" secondItem="NE7-D0-wis" secondAttribute="trailing" id="JCf-H2-Er6"/>
+                                            <constraint firstItem="pV9-u1-ZDB" firstAttribute="leading" secondItem="oiF-Na-Ucz" secondAttribute="leading" id="VAc-Lh-e27"/>
+                                            <constraint firstAttribute="trailing" secondItem="qdb-Jd-wGj" secondAttribute="trailing" id="YY9-5F-0px"/>
+                                            <constraint firstAttribute="trailing" secondItem="jBk-72-1Ch" secondAttribute="trailing" id="d4O-vb-SK0"/>
+                                            <constraint firstItem="qdb-Jd-wGj" firstAttribute="leading" secondItem="oiF-Na-Ucz" secondAttribute="leading" id="ekf-eo-gT2"/>
+                                            <constraint firstItem="NE7-D0-wis" firstAttribute="leading" secondItem="oiF-Na-Ucz" secondAttribute="leading" id="ezp-3r-ber"/>
+                                            <constraint firstAttribute="trailing" secondItem="pV9-u1-ZDB" secondAttribute="trailing" id="nJm-vQ-gD2"/>
+                                            <constraint firstItem="jBk-72-1Ch" firstAttribute="leading" secondItem="oiF-Na-Ucz" secondAttribute="leading" id="qPv-Ww-bwf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d6U-jH-qqf" firstAttribute="leading" secondItem="sBb-0L-r3e" secondAttribute="leading" id="66W-ky-CAl"/>
+                                    <constraint firstItem="oiF-Na-Ucz" firstAttribute="leading" secondItem="sBb-0L-r3e" secondAttribute="leading" id="7Pr-hy-61D"/>
+                                    <constraint firstAttribute="bottom" secondItem="oiF-Na-Ucz" secondAttribute="bottom" id="8V5-ag-deh"/>
+                                    <constraint firstItem="d6U-jH-qqf" firstAttribute="top" secondItem="sBb-0L-r3e" secondAttribute="top" id="95k-TZ-rwH"/>
+                                    <constraint firstAttribute="trailing" secondItem="d6U-jH-qqf" secondAttribute="trailing" id="Chw-Ku-qEu"/>
+                                    <constraint firstAttribute="trailing" secondItem="oiF-Na-Ucz" secondAttribute="trailing" id="vR7-jl-iyE"/>
+                                    <constraint firstItem="oiF-Na-Ucz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d6U-jH-qqf" secondAttribute="bottom" id="yz5-xA-Lxr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sBb-0L-r3e" firstAttribute="leading" secondItem="dTc-96-dPZ" secondAttribute="leading" constant="20" id="08j-bp-CuJ"/>
+                            <constraint firstAttribute="bottom" secondItem="sBb-0L-r3e" secondAttribute="bottom" constant="20" id="b6R-LZ-LRc"/>
+                            <constraint firstAttribute="trailing" secondItem="sBb-0L-r3e" secondAttribute="trailing" constant="20" id="oJX-pV-j82"/>
+                            <constraint firstItem="sBb-0L-r3e" firstAttribute="top" secondItem="dTc-96-dPZ" secondAttribute="top" constant="20" id="veI-1g-36u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sH5-uH-ILm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259" y="784"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="justitia" width="1920" height="1440"/>
+    </resources>
 </document>
