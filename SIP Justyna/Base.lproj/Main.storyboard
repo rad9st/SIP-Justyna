@@ -173,17 +173,91 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jbz-NW-P1Y" kind="relationship" relationship="rootViewController" id="0Cg-3b-0Yf"/>
+                        <segue destination="Jr3-IH-dtB" kind="relationship" relationship="rootViewController" id="4sV-RD-TE7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKC-RH-eL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="91"/>
+            <point key="canvasLocation" x="580" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--Law TypesVC-->
+        <scene sceneID="qdA-QY-Iv2">
+            <objects>
+                <viewController id="Jr3-IH-dtB" customClass="LawTypesVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uLT-7b-7Jw"/>
+                        <viewControllerLayoutGuide type="bottom" id="tlN-FE-nzp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QyF-Sm-N0P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Działy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-tz-Elb">
+                                <rect key="frame" x="20" y="64" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lkg-9L-wlt">
+                                <rect key="frame" x="0.0" y="112" width="414" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="Tmb-TH-H10">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tmb-TH-H10" id="gEF-br-a6J">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-n4-qdN">
+                                                    <rect key="frame" x="8" y="7.9999999999999964" width="398" height="54.666666666666657"/>
+                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Jt0-n4-qdN" secondAttribute="trailing" id="XE1-Da-oma"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Jt0-n4-qdN" secondAttribute="bottom" id="njP-1A-A8x"/>
+                                                <constraint firstItem="Jt0-n4-qdN" firstAttribute="top" secondItem="gEF-br-a6J" secondAttribute="topMargin" id="pTa-eO-j79"/>
+                                                <constraint firstItem="Jt0-n4-qdN" firstAttribute="leading" secondItem="gEF-br-a6J" secondAttribute="leadingMargin" id="xKZ-Vq-lBx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jbz-NW-P1Y" kind="show" id="3hJ-F6-yDl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dxE-tz-Elb" firstAttribute="leading" secondItem="QyF-Sm-N0P" secondAttribute="leadingMargin" id="Ar6-dW-3fI"/>
+                            <constraint firstItem="Lkg-9L-wlt" firstAttribute="top" secondItem="dxE-tz-Elb" secondAttribute="bottom" constant="8" id="JhB-TM-Rry"/>
+                            <constraint firstItem="tlN-FE-nzp" firstAttribute="top" secondItem="Lkg-9L-wlt" secondAttribute="bottom" id="MFf-x3-2ZR"/>
+                            <constraint firstItem="dxE-tz-Elb" firstAttribute="trailing" secondItem="QyF-Sm-N0P" secondAttribute="trailingMargin" id="UKw-kJ-7z2"/>
+                            <constraint firstItem="Lkg-9L-wlt" firstAttribute="leading" secondItem="QyF-Sm-N0P" secondAttribute="leading" id="htx-1n-Sye"/>
+                            <constraint firstItem="Lkg-9L-wlt" firstAttribute="top" secondItem="dxE-tz-Elb" secondAttribute="bottom" constant="8" id="iBM-lx-RBA"/>
+                            <constraint firstItem="dxE-tz-Elb" firstAttribute="top" secondItem="uLT-7b-7Jw" secondAttribute="bottom" id="rWa-Bn-SSo"/>
+                            <constraint firstAttribute="trailing" secondItem="Lkg-9L-wlt" secondAttribute="trailing" id="vxF-4v-Wjc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CDr-BO-llh">
+                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="4yt-3U-0aj"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezQ-rT-q57" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="89"/>
+        </scene>
+        <!--Bill ListVC-->
         <scene sceneID="ueW-AA-9GA">
             <objects>
-                <viewController id="jbz-NW-P1Y" sceneMemberID="viewController">
+                <viewController id="jbz-NW-P1Y" customClass="BillListVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vf3-G1-bzm"/>
                         <viewControllerLayoutGuide type="bottom" id="yTK-2Y-ryl"/>
@@ -192,20 +266,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CMW-Cs-WLg">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oUC-I8-xW7">
+                                <rect key="frame" x="20" y="64" width="374" height="38.666666666666671"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CMW-Cs-WLg">
+                                <rect key="frame" x="0.0" y="110.66666666666669" width="414" height="581.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="a6k-Is-uMs">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="97"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="a6k-Is-uMs">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a6k-Is-uMs" id="lsQ-3l-PUn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-p4-Gg9">
-                                                    <rect key="frame" x="8" y="8" width="398" height="80.666666666666671"/>
+                                                    <rect key="frame" x="8" y="7.9999999999999964" width="398" height="48.666666666666657"/>
                                                     <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                                     <nil key="textColor"/>
@@ -219,23 +302,83 @@
                                                 <constraint firstItem="xmZ-p4-Gg9" firstAttribute="top" secondItem="lsQ-3l-PUn" secondAttribute="topMargin" id="jyK-Zf-uXw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hCZ-7a-Tta" kind="show" id="UMf-lo-p87"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CMW-Cs-WLg" secondAttribute="trailing" id="0rM-BX-cmb"/>
+                            <constraint firstItem="oUC-I8-xW7" firstAttribute="top" secondItem="Vf3-G1-bzm" secondAttribute="bottom" id="7cL-R2-4AD"/>
+                            <constraint firstItem="yTK-2Y-ryl" firstAttribute="top" secondItem="CMW-Cs-WLg" secondAttribute="bottom" id="Prm-71-lZi"/>
+                            <constraint firstItem="oUC-I8-xW7" firstAttribute="trailing" secondItem="SrS-nf-2N5" secondAttribute="trailingMargin" id="aea-du-SG0"/>
+                            <constraint firstItem="CMW-Cs-WLg" firstAttribute="top" secondItem="oUC-I8-xW7" secondAttribute="bottom" constant="8" id="gyf-p5-svb"/>
+                            <constraint firstItem="oUC-I8-xW7" firstAttribute="leading" secondItem="SrS-nf-2N5" secondAttribute="leadingMargin" id="jro-eT-PeE"/>
+                            <constraint firstItem="CMW-Cs-WLg" firstAttribute="leading" secondItem="SrS-nf-2N5" secondAttribute="leading" id="xgC-ZE-TE3"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Wyloguj się" id="zUF-s8-cNJ"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="6ig-hO-c3I">
-                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="4yt-3U-0aj">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="showDetail" id="r0r-4g-isT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="cQJ-5o-wzh"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRY-5K-j9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.5652173913045" y="89.673913043478265"/>
+            <point key="canvasLocation" x="2114" y="89"/>
+        </scene>
+        <!--BillVC-->
+        <scene sceneID="4E2-FT-B1x">
+            <objects>
+                <viewController id="hCZ-7a-Tta" customClass="BillVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d3W-mo-aIt"/>
+                        <viewControllerLayoutGuide type="bottom" id="tfq-ue-gY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eI7-nd-8Pj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-C1-Y7Z">
+                                <rect key="frame" x="20" y="64" width="374" height="38.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
+                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="589.33333333333326"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tfq-ue-gY2" firstAttribute="top" secondItem="g8e-Yd-vsU" secondAttribute="bottom" id="3yK-Ho-qwO"/>
+                            <constraint firstItem="aZO-C1-Y7Z" firstAttribute="top" secondItem="d3W-mo-aIt" secondAttribute="bottom" id="H0L-f6-2es"/>
+                            <constraint firstItem="aZO-C1-Y7Z" firstAttribute="trailing" secondItem="eI7-nd-8Pj" secondAttribute="trailingMargin" id="IIx-zq-2II"/>
+                            <constraint firstAttribute="trailing" secondItem="g8e-Yd-vsU" secondAttribute="trailing" id="J5l-rt-riF"/>
+                            <constraint firstItem="g8e-Yd-vsU" firstAttribute="top" secondItem="aZO-C1-Y7Z" secondAttribute="bottom" id="MaY-v1-k01"/>
+                            <constraint firstItem="g8e-Yd-vsU" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leading" id="ZjD-Tm-P8e"/>
+                            <constraint firstItem="aZO-C1-Y7Z" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leadingMargin" id="jjh-0q-f1n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D1G-FW-CuR">
+                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="FKw-6O-9gc"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-Wx-tra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930.434782608696" y="98.641304347826093"/>
         </scene>
         <!--Reg UsersVC-->
         <scene sceneID="JWI-rU-IhS">
@@ -403,7 +546,4 @@
     <resources>
         <image name="justitia" width="1920" height="1440"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="r0r-4g-isT"/>
-    </inferredMetricsTieBreakers>
 </document>

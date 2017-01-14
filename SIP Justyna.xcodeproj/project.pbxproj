@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		155753471E272CBD00E8E32F /* RegUsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155753461E272CBD00E8E32F /* RegUsersVC.swift */; };
+		157327321E29AAB3009CEB51 /* LawTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157327311E29AAB3009CEB51 /* LawTypesVC.swift */; };
+		157327341E29AACD009CEB51 /* BillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157327331E29AACD009CEB51 /* BillVC.swift */; };
+		157327361E29ABF0009CEB51 /* BillListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157327351E29ABF0009CEB51 /* BillListVC.swift */; };
 		157AB2A81E258F1600D02256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AB2A71E258F1600D02256 /* AppDelegate.swift */; };
 		157AB2AA1E258F1600D02256 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AB2A91E258F1600D02256 /* LoginVC.swift */; };
 		157AB2AD1E258F1600D02256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2AB1E258F1600D02256 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		155753461E272CBD00E8E32F /* RegUsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegUsersVC.swift; sourceTree = "<group>"; };
+		157327311E29AAB3009CEB51 /* LawTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypesVC.swift; sourceTree = "<group>"; };
+		157327331E29AACD009CEB51 /* BillVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillVC.swift; sourceTree = "<group>"; };
+		157327351E29ABF0009CEB51 /* BillListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillListVC.swift; sourceTree = "<group>"; };
 		157AB2A41E258F1600D02256 /* SIP Justyna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIP Justyna.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		157AB2A71E258F1600D02256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		157AB2A91E258F1600D02256 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -74,8 +80,11 @@
 		157AB2BC1E258F5500D02256 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				157327351E29ABF0009CEB51 /* BillListVC.swift */,
+				157327311E29AAB3009CEB51 /* LawTypesVC.swift */,
 				155753461E272CBD00E8E32F /* RegUsersVC.swift */,
 				157AB2A91E258F1600D02256 /* LoginVC.swift */,
+				157327331E29AACD009CEB51 /* BillVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,9 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				155753471E272CBD00E8E32F /* RegUsersVC.swift in Sources */,
+				157327341E29AACD009CEB51 /* BillVC.swift in Sources */,
+				157327321E29AAB3009CEB51 /* LawTypesVC.swift in Sources */,
 				157AB2B01E258F1600D02256 /* SIP_Justyna.xcdatamodeld in Sources */,
 				157AB2AA1E258F1600D02256 /* LoginVC.swift in Sources */,
 				157AB2A81E258F1600D02256 /* AppDelegate.swift in Sources */,
+				157327361E29ABF0009CEB51 /* BillListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
