@@ -17,6 +17,8 @@
 		157AB2B01E258F1600D02256 /* SIP_Justyna.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AB2AE1E258F1600D02256 /* SIP_Justyna.xcdatamodeld */; };
 		157AB2B21E258F1600D02256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B11E258F1600D02256 /* Assets.xcassets */; };
 		157AB2B51E258F1600D02256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */; };
+		15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B495691E2A79D300355A28 /* LawTypes.swift */; };
+		15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		157AB2B11E258F1600D02256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AB2B41E258F1600D02256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AB2B61E258F1600D02256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B495691E2A79D300355A28 /* LawTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypes.swift; sourceTree = "<group>"; };
+		15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		157AB2BE1E258F6F00D02256 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15B495691E2A79D300355A28 /* LawTypes.swift */,
+				15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			files = (
 				155753471E272CBD00E8E32F /* RegUsersVC.swift in Sources */,
 				157327341E29AACD009CEB51 /* BillVC.swift in Sources */,
+				15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */,
+				15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */,
 				157327321E29AAB3009CEB51 /* LawTypesVC.swift in Sources */,
 				157AB2B01E258F1600D02256 /* SIP_Justyna.xcdatamodeld in Sources */,
 				157AB2AA1E258F1600D02256 /* LoginVC.swift in Sources */,
