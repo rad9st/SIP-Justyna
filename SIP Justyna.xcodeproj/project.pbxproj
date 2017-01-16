@@ -19,6 +19,7 @@
 		157AB2B51E258F1600D02256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */; };
 		15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B495691E2A79D300355A28 /* LawTypes.swift */; };
 		15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */; };
+		E7A172F9CB8BDAC7E15EE01A /* Pods_SIP_Justyna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE57FE5D6EE9696E425794F /* Pods_SIP_Justyna.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		157AB2B61E258F1600D02256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B495691E2A79D300355A28 /* LawTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypes.swift; sourceTree = "<group>"; };
 		15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypesCell.swift; sourceTree = "<group>"; };
+		6D423FBF3836AF8CBD92BA25 /* Pods-SIP Justyna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Justyna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna.debug.xcconfig"; sourceTree = "<group>"; };
+		7EE57FE5D6EE9696E425794F /* Pods_SIP_Justyna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIP_Justyna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4532A78585D5CAFAEB9B23 /* Pods-SIP Justyna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Justyna.release.xcconfig"; path = "Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A172F9CB8BDAC7E15EE01A /* Pods_SIP_Justyna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125E4A6FBB9912039798062E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EE57FE5D6EE9696E425794F /* Pods_SIP_Justyna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		157AB29B1E258F1600D02256 = {
 			isa = PBXGroup;
 			children = (
 				157AB2A61E258F1600D02256 /* SIP Justyna */,
 				157AB2A51E258F1600D02256 /* Products */,
+				B94F0E9A385E184E3CBF52D1 /* Pods */,
+				125E4A6FBB9912039798062E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		B94F0E9A385E184E3CBF52D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D423FBF3836AF8CBD92BA25 /* Pods-SIP Justyna.debug.xcconfig */,
+				FE4532A78585D5CAFAEB9B23 /* Pods-SIP Justyna.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 157AB2B91E258F1600D02256 /* Build configuration list for PBXNativeTarget "SIP Justyna" */;
 			buildPhases = (
+				6F1D9F4F15467B3EE29EBDC0 /* [CP] Check Pods Manifest.lock */,
 				157AB2A01E258F1600D02256 /* Sources */,
 				157AB2A11E258F1600D02256 /* Frameworks */,
 				157AB2A21E258F1600D02256 /* Resources */,
+				4C43BA4C292E9EA7A0359BA0 /* [CP] Embed Pods Frameworks */,
+				494637AE0DF3E4FA458022B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +203,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		494637AE0DF3E4FA458022B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C43BA4C292E9EA7A0359BA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1D9F4F15467B3EE29EBDC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		157AB2A01E258F1600D02256 /* Sources */ = {
@@ -311,6 +386,7 @@
 		};
 		157AB2BA1E258F1600D02256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D423FBF3836AF8CBD92BA25 /* Pods-SIP Justyna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R439HZKN8N;
@@ -324,6 +400,7 @@
 		};
 		157AB2BB1E258F1600D02256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4532A78585D5CAFAEB9B23 /* Pods-SIP Justyna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R439HZKN8N;

@@ -32,10 +32,13 @@ class LawTypes {
     }
     
     init(post:Int, title:String) {
-        self.postId = post
-        self.categoryTitle = title
+        
+            self.postId = post
+            self.categoryTitle = title
+    
+    
+    
     }
     
-    
-    
+
 }

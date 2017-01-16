@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
@@ -15,13 +17,15 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var lawTypes = [LawTypes]()
     
+    typealias JsonObjStringAny = [String:AnyObject]
     
-    
+    let urlString = "http://json.j.pl/api/get_category_index/?parent=34"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        parsingJsonLawTypes()
+        JsonDataGet(url: urlString)
+        
 
         lawTypesTV.delegate = self
         lawTypesTV.dataSource = self
@@ -55,43 +59,56 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
     }
     
-    func parsingJsonLawTypes() {
+    func JsonDataGet(url: String){
+        Alamofire.request(url).responseJSON(completionHandler: {
+            response in
+            self.parseData(JSONData: response.data!)
+        }
+            
+        )
+    }
+    
+    func parseData(JSONData : Data) {
         
-        let urlString = "http://json.j.pl/api/get_category_index/?parent=34"
-        let url = URL(string: urlString)
         
         
-        DispatchQueue.global().async {
-            do {
-                URLSession.shared.dataTask(with:url!) { (data, response, error) in
-                    if error != nil {
-                    } else {
-                        do {
-                            let parsedData = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
-                            let lawTypesJason = parsedData["categories"] as! [String:Any]
-                            
-                            print(lawTypesJason)
-                            
-                            
-                        } catch let error as NSError {
-                            print(error)
-                        }
-                    }
-                    
-                    }.resume()
+        let json = JSON(data: JSONData)
+        let dicJ = json["categories"].arrayValue
+        for item in 0..<dicJ.count{
+            if let object1 = dicJ[item].dictionary{
+                let title = object1["title"]?.stringValue
+                let id = object1["id"]?.intValue
+                if let lawT:LawTypes = LawTypes.init(post: id!, title: title!){
+                print(lawT)
+                    lawTypes.append(lawT)
                 
-                
-                
-                
-                DispatchQueue.global().sync {
-                    
                 }
-            } catch  {
-                //handle the error
             }
+            lawTypesTV.reloadData()
         }
         
+        
+        
+        
+        
+        
+//        for i in 0..<cat.count{
+//        let titleJ = cat[i].string
+//        let idJ = cat[i].int
+//            print(titleJ)
+//            print(idJ)
+//        
+//        }
+       
     }
+
+        
+        
+        
+        
+    }
+
+
     
     
 
@@ -108,10 +125,6 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 //        
 //    }
     
-    
-}
 
-
-    
 
 
