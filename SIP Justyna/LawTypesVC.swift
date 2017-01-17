@@ -53,9 +53,9 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let partyRock = lawTypes[indexPath.row]
+        let law:LawTypes = lawTypes[indexPath.row]
         
-        performSegue(withIdentifier: "DzialySegue", sender: partyRock)
+        performSegue(withIdentifier: "DzialSegue", sender: law)
         
     }
     
@@ -79,7 +79,7 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 let title = object1["title"]?.stringValue
                 let id = object1["id"]?.intValue
                 if let lawT:LawTypes = LawTypes.init(post: id!, title: title!){
-                print(lawT)
+                
                     lawTypes.append(lawT)
                 
                 }
@@ -88,43 +88,17 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         
         
-        
-        
-        
-        
-//        for i in 0..<cat.count{
-//        let titleJ = cat[i].string
-//        let idJ = cat[i].int
-//            print(titleJ)
-//            print(idJ)
-//        
-//        }
-       
     }
-
-        
-        
-        
-        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? BillsVC{
+            
+            if let lawT = sender as? LawTypes{
+                destination.LawTypeObj = lawT
+            }
+        }
     }
-
-
-    
-    
-
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        if let destination = segue.destination as? BillListVC {
-//            
-//            if let send = sender as? LawTypes {
-//                
-//            }
-//            
-//        }
-//        
-//    }
-    
+}
 
 
 

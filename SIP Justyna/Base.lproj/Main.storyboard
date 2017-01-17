@@ -122,7 +122,7 @@
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="qA3-tK-V3f" kind="show" id="HkL-CN-NVe"/>
+                                                            <segue destination="g0a-Ys-6ah" kind="show" id="Tjh-9H-n2m"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -163,22 +163,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-258" y="89"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TPP-3b-uHn">
-            <objects>
-                <navigationController id="qA3-tK-V3f" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXN-GU-0AI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Jr3-IH-dtB" kind="relationship" relationship="rootViewController" id="4sV-RD-TE7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GKC-RH-eL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="580" y="89"/>
         </scene>
         <!--Law TypesVC-->
         <scene sceneID="qdA-QY-Iv2">
@@ -229,7 +213,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cellDzialyLabel" destination="Jt0-n4-qdN" id="s11-Qs-15W"/>
-                                            <segue destination="5Pe-DZ-5L3" kind="show" identifier="DzialySegue" id="Nsd-Wf-5dr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -247,16 +230,15 @@
                             <constraint firstAttribute="trailing" secondItem="Lkg-9L-wlt" secondAttribute="trailing" id="vxF-4v-Wjc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CDr-BO-llh">
-                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="4yt-3U-0aj"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="RQs-zw-kJH"/>
                     <connections>
-                        <outlet property="lawTypesTV" destination="Lkg-9L-wlt" id="qu3-q0-g9G"/>
+                        <outlet property="lawTypesTV" destination="Lkg-9L-wlt" id="cj8-6i-v7X"/>
+                        <segue destination="5Pe-DZ-5L3" kind="show" identifier="DzialSegue" id="xVs-qe-78I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezQ-rT-q57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="89"/>
+            <point key="canvasLocation" x="558" y="80"/>
         </scene>
         <!--BillVC-->
         <scene sceneID="4E2-FT-B1x">
@@ -271,7 +253,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-C1-Y7Z">
-                                <rect key="frame" x="20" y="64" width="374" height="38.666666666666671"/>
+                                <rect key="frame" x="20" y="20" width="374" height="38.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -280,7 +262,7 @@
                                 </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
-                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="633.33333333333326"/>
+                                <rect key="frame" x="0.0" y="58.666666666666686" width="414" height="677.33333333333326"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
@@ -302,13 +284,10 @@
                             <constraint firstItem="aZO-C1-Y7Z" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leadingMargin" id="jjh-0q-f1n"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="D1G-FW-CuR">
-                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="FKw-6O-9gc"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-Wx-tra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2930.434782608696" y="98.641304347826093"/>
+            <point key="canvasLocation" x="2190" y="89"/>
         </scene>
         <!--Reg UsersVC-->
         <scene sceneID="JWI-rU-IhS">
@@ -470,12 +449,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sH5-uH-ILm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-259" y="784"/>
+            <point key="canvasLocation" x="-258" y="958"/>
         </scene>
-        <!--Bill ListVC-->
+        <!--BillsVC-->
         <scene sceneID="NW8-1d-VIy">
             <objects>
-                <viewController id="5Pe-DZ-5L3" customClass="BillListVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Pe-DZ-5L3" customClass="BillsVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="17t-m4-ZTB"/>
                         <viewControllerLayoutGuide type="bottom" id="cUS-Se-ztu"/>
@@ -519,9 +498,6 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="NHx-Lz-6zM" secondAttribute="bottom" id="ld4-0n-USx"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="hCZ-7a-Tta" kind="show" id="36n-0Y-20z"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -538,13 +514,26 @@
                             <constraint firstItem="EQZ-hF-4MA" firstAttribute="top" secondItem="dlJ-ge-YNr" secondAttribute="bottom" constant="8" id="qGV-T2-uQK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2d2-pW-9YM">
-                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="x1Z-Gm-hmS"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bd-ur-s5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="89"/>
+            <point key="canvasLocation" x="1403" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u1a-2D-dZJ">
+            <objects>
+                <navigationController id="g0a-Ys-6ah" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qc-Yd-nlV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jr3-IH-dtB" kind="relationship" relationship="rootViewController" id="rlB-hc-HHg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWU-4M-JHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="908"/>
         </scene>
     </scenes>
     <resources>

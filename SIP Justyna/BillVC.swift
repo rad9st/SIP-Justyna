@@ -10,6 +10,8 @@ import UIKit
 
 class BillVC: UIViewController {
 
+    public var ssss = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
