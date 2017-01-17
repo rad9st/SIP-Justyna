@@ -59,14 +59,16 @@ class BillVC: UIViewController {
         let json = JSON(data: JSONData)
         for item in json["content"].dictionaryValue{
             let textA = item.value.description
-            let textB = stringFromHtml(string: textA)
+           let textB = stringFromHtml(string: textA)
             textViewBill.attributedText = textB
+            textViewBill.font = UIFont(name: "didot", size: 20)
         
             
         }
         
     }
     
+    // przetwarzanie tekstu html do wyświetlenia w textview - processing text html format to show on textview
     private func stringFromHtml(string: String) -> NSAttributedString? {
         do {
             let string = string.data(using: String.Encoding.utf16, allowLossyConversion: true)
@@ -74,6 +76,7 @@ class BillVC: UIViewController {
                 let text = try NSAttributedString(data: dataString,
                                                  options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
                                                  documentAttributes: nil)
+
                 return text
             }
         } catch {
