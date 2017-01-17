@@ -7,31 +7,78 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class BillVC: UIViewController {
 
-    public var ssss = ""
+    private var billsLet: Bill!
+    
+    
+    var BillsLet: Bill {
+        get {
+            return billsLet
+        }
+        set {
+            billsLet = newValue
+        }
+    }
+    
+    private var urlBills:String!
+    
+    var UrlBills: String {
+        get {
+            return urlBills
+        }
+        set {
+            urlBills = "http://json.j.pl/wp-json/wp/v2/posts/\(newValue)?fields=content.rendered"
+        }
+    }
+
+    @IBOutlet weak var textViewBill: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        UrlBills = BillsLet.Bill.description
+        
+        JsonDataGet(url: UrlBills)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func JsonDataGet(url: String){
+        Alamofire.request(url).responseJSON(completionHandler: {
+            response in
+            self.parseData(JSONData: response.data!)
+        }
+            
+        )
     }
-    */
-
+    
+    func parseData(JSONData : Data) {
+        let json = JSON(data: JSONData)
+        for item in json["content"].dictionaryValue{
+            let textA = item.value.description
+            let textB = stringFromHtml(string: textA)
+            textViewBill.attributedText = textB
+        
+            
+        }
+        
+    }
+    
+    private func stringFromHtml(string: String) -> NSAttributedString? {
+        do {
+            let string = string.data(using: String.Encoding.utf16, allowLossyConversion: true)
+            if let dataString = string {
+                let text = try NSAttributedString(data: dataString,
+                                                 options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+                                                 documentAttributes: nil)
+                return text
+            }
+        } catch {
+        }
+        return nil
+    }
+    
 }

@@ -253,7 +253,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-C1-Y7Z">
-                                <rect key="frame" x="20" y="20" width="374" height="38.666666666666657"/>
+                                <rect key="frame" x="20" y="64" width="374" height="38.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -261,14 +261,13 @@
                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
-                                <rect key="frame" x="0.0" y="58.666666666666686" width="414" height="677.33333333333326"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Wczytywanie ....." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
+                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="633.33333333333326"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -284,6 +283,9 @@
                             <constraint firstItem="aZO-C1-Y7Z" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leadingMargin" id="jjh-0q-f1n"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textViewBill" destination="g8e-Yd-vsU" id="dye-d7-8O6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-Wx-tra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -476,14 +478,14 @@
                                 <rect key="frame" x="0.0" y="112" width="414" height="624"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="FxF-o4-59C">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BillCell" rowHeight="71" id="FxF-o4-59C" customClass="BillCell" customModule="SIP_Justyna" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FxF-o4-59C" id="qYD-7q-7mP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-Lz-6zM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-Lz-6zM">
                                                     <rect key="frame" x="8" y="8" width="398" height="55"/>
                                                     <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
@@ -498,6 +500,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="NHx-Lz-6zM" secondAttribute="bottom" id="ld4-0n-USx"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="BillsLabel" destination="NHx-Lz-6zM" id="GgH-SL-RRL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -514,6 +519,10 @@
                             <constraint firstItem="EQZ-hF-4MA" firstAttribute="top" secondItem="dlJ-ge-YNr" secondAttribute="bottom" constant="8" id="qGV-T2-uQK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BillsTV" destination="EQZ-hF-4MA" id="wl3-Af-1M1"/>
+                        <segue destination="hCZ-7a-Tta" kind="show" identifier="BillSegue" id="jbx-mo-RkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bd-ur-s5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

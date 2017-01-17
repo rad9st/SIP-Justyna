@@ -10,6 +10,9 @@ import UIKit
 
 class BillCell: UITableViewCell {
 
+    
+    @IBOutlet weak var BillsLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
