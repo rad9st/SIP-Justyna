@@ -44,6 +44,7 @@ class BillVC: UIViewController {
         
         JsonDataGet(url: UrlBills)
         
+        
     }
     
     func JsonDataGet(url: String){
@@ -61,7 +62,8 @@ class BillVC: UIViewController {
             let textA = item.value.description
            let textB = stringFromHtml(string: textA)
             textViewBill.attributedText = textB
-            textViewBill.font = UIFont(name: "didot", size: 20)
+            
+            textViewBill.font = UIFont(name: "didot", size: 18)
         
             
         }

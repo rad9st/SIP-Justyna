@@ -21,6 +21,7 @@
 		157AB2B51E258F1600D02256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */; };
 		15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B495691E2A79D300355A28 /* LawTypes.swift */; };
 		15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */; };
+		15FE077B1E2ECF3E00CF8CBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15FE077A1E2ECF3E00CF8CBF /* GoogleService-Info.plist */; };
 		E7A172F9CB8BDAC7E15EE01A /* Pods_SIP_Justyna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE57FE5D6EE9696E425794F /* Pods_SIP_Justyna.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		157AB2B61E258F1600D02256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B495691E2A79D300355A28 /* LawTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypes.swift; sourceTree = "<group>"; };
 		15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypesCell.swift; sourceTree = "<group>"; };
+		15FE077A1E2ECF3E00CF8CBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D423FBF3836AF8CBD92BA25 /* Pods-SIP Justyna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Justyna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna.debug.xcconfig"; sourceTree = "<group>"; };
 		7EE57FE5D6EE9696E425794F /* Pods_SIP_Justyna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIP_Justyna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4532A78585D5CAFAEB9B23 /* Pods-SIP Justyna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Justyna.release.xcconfig"; path = "Pods/Target Support Files/Pods-SIP Justyna/Pods-SIP Justyna.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */,
 				157AB2B61E258F1600D02256 /* Info.plist */,
 				157AB2AE1E258F1600D02256 /* SIP_Justyna.xcdatamodeld */,
+				15FE077A1E2ECF3E00CF8CBF /* GoogleService-Info.plist */,
 			);
 			path = "SIP Justyna";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				157AB2B51E258F1600D02256 /* LaunchScreen.storyboard in Resources */,
+				15FE077B1E2ECF3E00CF8CBF /* GoogleService-Info.plist in Resources */,
 				157AB2B21E258F1600D02256 /* Assets.xcassets in Resources */,
 				157AB2AD1E258F1600D02256 /* Main.storyboard in Resources */,
 			);

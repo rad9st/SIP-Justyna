@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,20 +19,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-bK-UEQ">
-                                <rect key="frame" x="20" y="20" width="984" height="1326"/>
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cx7-ba-F1H">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="653"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="justitia" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-zk-gZ6">
-                                                <rect key="frame" x="0.0" y="0.0" width="984" height="653"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Informacji Prawnej Justyna" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-fz-clC">
-                                                <rect key="frame" x="20" y="15" width="944" height="38"/>
+                                                <rect key="frame" x="20" y="15" width="334" height="23"/>
                                                 <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
@@ -55,10 +55,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="alE-4P-bHZ">
-                                        <rect key="frame" x="0.0" y="673" width="984" height="653"/>
+                                        <rect key="frame" x="0.0" y="358" width="374" height="338"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logowanie do systemu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41L-Uv-NaJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="984" height="155"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
                                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qF7-2C-TQ2">
-                                                <rect key="frame" x="0.0" y="166" width="984" height="155"/>
+                                                <rect key="frame" x="0.0" y="87.333333333333314" width="374" height="76.333333333333314"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -76,7 +76,7 @@
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ui7-40-34W">
-                                                <rect key="frame" x="0.0" y="332" width="984" height="155"/>
+                                                <rect key="frame" x="0.0" y="174.66666666666663" width="374" height="76"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -85,10 +85,10 @@
                                                 </variation>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-P1-jg4">
-                                                <rect key="frame" x="0.0" y="498" width="984" height="155"/>
+                                                <rect key="frame" x="0.0" y="261.66666666666663" width="374" height="76.333333333333371"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-wz-SGU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="155"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="76.333333333333371"/>
                                                         <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                         <state key="normal" title="Rejestracja">
@@ -103,11 +103,11 @@
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="MtM-tT-GHn" kind="showDetail" id="hei-Th-a42"/>
+                                                            <action selector="RegBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgp-IB-ZQ6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0T-U7-wQc">
-                                                        <rect key="frame" x="497" y="0.0" width="487" height="155"/>
+                                                        <rect key="frame" x="192" y="0.0" width="182" height="76.333333333333371"/>
                                                         <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                         <state key="normal" title="Zaloguj">
@@ -122,7 +122,7 @@
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="g0a-Ys-6ah" kind="show" id="Tjh-9H-n2m"/>
+                                                            <action selector="logBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4m0-4v-Ewz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -159,10 +159,17 @@
                             <constraint firstItem="zMO-bK-UEQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sHx-8Q-SpY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="qF7-2C-TQ2" id="KUn-xO-kfj"/>
+                        <outlet property="logBtn" destination="d0T-U7-wQc" id="WJ0-8O-VOI"/>
+                        <outlet property="passwordTF" destination="ui7-40-34W" id="BOT-91-TRe"/>
+                        <segue destination="MtM-tT-GHn" kind="showDetail" identifier="registration" action="showViewController:sender:" id="Vu1-31-SpQ"/>
+                        <segue destination="g0a-Ys-6ah" kind="showDetail" identifier="LoggedIn" id="G7J-Vj-9ch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="89"/>
+            <point key="canvasLocation" x="-409" y="-280"/>
         </scene>
         <!--Law TypesVC-->
         <scene sceneID="qdA-QY-Iv2">
@@ -173,7 +180,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tlN-FE-nzp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QyF-Sm-N0P">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Działy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-tz-Elb">
@@ -197,7 +204,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-n4-qdN">
-                                                    <rect key="frame" x="8" y="8" width="398" height="54.5"/>
+                                                    <rect key="frame" x="8" y="7.9999999999999964" width="398" height="54.666666666666657"/>
                                                     <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                                     <nil key="textColor"/>
@@ -230,15 +237,23 @@
                             <constraint firstAttribute="trailing" secondItem="Lkg-9L-wlt" secondAttribute="trailing" id="vxF-4v-Wjc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RQs-zw-kJH"/>
+                    <navigationItem key="navigationItem" id="RQs-zw-kJH">
+                        <barButtonItem key="rightBarButtonItem" title="Wyloguj się" id="efy-L7-NTi">
+                            <color key="tintColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="LogoutBtnPressed:" destination="Jr3-IH-dtB" id="IFk-IU-N6M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lawTypesTV" destination="Lkg-9L-wlt" id="cj8-6i-v7X"/>
                         <segue destination="5Pe-DZ-5L3" kind="show" identifier="DzialSegue" id="xVs-qe-78I"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="LogOut" id="ji0-A5-Jus"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezQ-rT-q57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="80"/>
+            <point key="canvasLocation" x="-1133" y="1255"/>
         </scene>
         <!--BillVC-->
         <scene sceneID="4E2-FT-B1x">
@@ -249,11 +264,11 @@
                         <viewControllerLayoutGuide type="bottom" id="tfq-ue-gY2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eI7-nd-8Pj">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-C1-Y7Z">
-                                <rect key="frame" x="20" y="64" width="984" height="62.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="38.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -262,7 +277,7 @@
                                 </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
-                                <rect key="frame" x="0.0" y="126.5" width="1024" height="1239.5"/>
+                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="633.33333333333326"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
@@ -306,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-Wx-tra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="89"/>
+            <point key="canvasLocation" x="999" y="1255"/>
         </scene>
         <!--Reg UsersVC-->
         <scene sceneID="JWI-rU-IhS">
@@ -317,20 +332,20 @@
                         <viewControllerLayoutGuide type="bottom" id="Xm3-6c-4s5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dTc-96-dPZ">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-0L-r3e">
-                                <rect key="frame" x="20" y="20" width="984" height="1326"/>
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6U-jH-qqf">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="653"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="justitia" translatesAutoresizingMaskIntoConstraints="NO" id="x7b-r1-T9o">
-                                                <rect key="frame" x="0.0" y="0.0" width="984" height="653"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Informacji Prawnej Justyna" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-FH-mKQ">
-                                                <rect key="frame" x="20" y="15" width="944" height="38"/>
+                                                <rect key="frame" x="20" y="15" width="334" height="23"/>
                                                 <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
@@ -352,11 +367,11 @@
                                             <constraint firstAttribute="trailing" secondItem="XPd-FH-mKQ" secondAttribute="trailing" constant="20" id="ovI-yM-6KI"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-Na-Ucz">
-                                        <rect key="frame" x="0.0" y="673" width="984" height="653"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" axis="vertical" distribution="fillProportionally" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-Na-Ucz">
+                                        <rect key="frame" x="0.0" y="358" width="374" height="338"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podaj dane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdb-Jd-wGj">
-                                                <rect key="frame" x="0.0" y="0.0" width="984" height="122"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="61.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -365,16 +380,16 @@
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pV9-u1-ZDB">
-                                                <rect key="frame" x="0.0" y="133" width="984" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="72.333333333333314" width="374" height="49.666666666666686"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NE7-D0-wis">
-                                                <rect key="frame" x="0.0" y="265.5" width="984" height="122"/>
+                                                <rect key="frame" x="0.0" y="133" width="374" height="49.333333333333371"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -383,7 +398,7 @@
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="powtórz hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBk-72-1Ch">
-                                                <rect key="frame" x="0.0" y="398.5" width="984" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="193.33333333333337" width="374" height="49.333333333333258"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -391,11 +406,11 @@
                                                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                 </variation>
                                             </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-wm-9I0">
-                                                <rect key="frame" x="0.0" y="531" width="984" height="122"/>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-wm-9I0">
+                                                <rect key="frame" x="0.0" y="253.66666666666663" width="374" height="84.333333333333371"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-Wc-gaL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="122"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="84.333333333333371"/>
                                                         <color key="backgroundColor" red="0.69411764705882351" green="0.21568627450980393" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                         <state key="normal" title="Wróć">
@@ -410,11 +425,11 @@
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="f9s-MR-eJw"/>
+                                                            <action selector="returnPressed:" destination="MtM-tT-GHn" eventType="touchUpInside" id="tau-yI-YUb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-zT-8o0">
-                                                        <rect key="frame" x="497" y="0.0" width="487" height="122"/>
+                                                        <rect key="frame" x="192" y="0.0" width="182" height="84.333333333333371"/>
                                                         <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                         <state key="normal" title="Zarejestruj się">
@@ -428,6 +443,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="RegBtnPressed:" destination="MtM-tT-GHn" eventType="touchUpInside" id="BOB-tZ-2tt"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -465,10 +483,16 @@
                             <constraint firstItem="sBb-0L-r3e" firstAttribute="top" secondItem="dTc-96-dPZ" secondAttribute="top" constant="20" id="veI-1g-36u"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="pV9-u1-ZDB" id="pVq-Fq-fdr"/>
+                        <outlet property="passwordTF" destination="NE7-D0-wis" id="Soh-Bn-n1a"/>
+                        <outlet property="rePasswordTF" destination="jBk-72-1Ch" id="2cE-qX-qgG"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="BackToLoginScreenSegue" id="wd6-xW-QYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sH5-uH-ILm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="958"/>
+            <point key="canvasLocation" x="-1133" y="474"/>
         </scene>
         <!--BillsVC-->
         <scene sceneID="NW8-1d-VIy">
@@ -479,7 +503,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cUS-Se-ztu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zba-KM-KWB">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Akty prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ge-YNr">
@@ -499,7 +523,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FxF-o4-59C" id="qYD-7q-7mP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-Lz-6zM">
@@ -536,6 +560,8 @@
                             <constraint firstItem="EQZ-hF-4MA" firstAttribute="top" secondItem="dlJ-ge-YNr" secondAttribute="bottom" constant="8" id="qGV-T2-uQK"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BillsTV" destination="EQZ-hF-4MA" id="wl3-Af-1M1"/>
                         <segue destination="hCZ-7a-Tta" kind="show" identifier="BillSegue" id="jbx-mo-RkE"/>
@@ -543,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bd-ur-s5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403" y="80"/>
+            <point key="canvasLocation" x="-59" y="1255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u1a-2D-dZJ">
@@ -559,10 +585,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWU-4M-JHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="908"/>
+            <point key="canvasLocation" x="-59" y="474"/>
         </scene>
     </scenes>
     <resources>
         <image name="justitia" width="1920" height="1440"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ji0-A5-Jus"/>
+    </inferredMetricsTieBreakers>
 </document>

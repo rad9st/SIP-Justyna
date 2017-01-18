@@ -52,6 +52,8 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BillCell", for: indexPath) as? BillCell {
