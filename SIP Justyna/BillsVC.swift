@@ -37,6 +37,8 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
+    //tablica obiektów Bill
     var billsArrayTV = [Bill]()
     
     // ładowanie widoku

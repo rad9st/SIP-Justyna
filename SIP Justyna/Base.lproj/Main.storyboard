@@ -151,7 +151,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99215686274509807" green="0.95686274509803915" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99320524930953979" green="0.95828515291213989" blue="0.86619991064071655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zMO-bK-UEQ" secondAttribute="bottom" constant="20" id="0Zi-Lf-u4R"/>
                             <constraint firstItem="zMO-bK-UEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FTc-is-sew"/>
@@ -170,6 +170,387 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-409" y="-280"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="3U3-zg-QWA">
+            <objects>
+                <viewController id="xUd-GD-dID" customClass="MenuVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iZ1-nH-S1D"/>
+                        <viewControllerLayoutGuide type="bottom" id="LgX-QE-9dN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Hp-cd-CGb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0X3-Dn-srE">
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjQ-tF-fcz">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="348"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="justitia" translatesAutoresizingMaskIntoConstraints="NO" id="vxH-GD-bzF">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="348"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Informacji Prawnej Justyna" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-3v-rTv">
+                                                <rect key="frame" x="20" y="15" width="334" height="23"/>
+                                                <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="vxH-GD-bzF" firstAttribute="leading" secondItem="GjQ-tF-fcz" secondAttribute="leading" id="IfB-c6-2XF"/>
+                                            <constraint firstAttribute="trailing" secondItem="vxH-GD-bzF" secondAttribute="trailing" id="TGJ-kN-ufF"/>
+                                            <constraint firstItem="h0p-3v-rTv" firstAttribute="leading" secondItem="GjQ-tF-fcz" secondAttribute="leading" constant="20" id="WlL-kK-UNE"/>
+                                            <constraint firstItem="vxH-GD-bzF" firstAttribute="top" secondItem="GjQ-tF-fcz" secondAttribute="top" id="fPm-rc-SAq"/>
+                                            <constraint firstAttribute="bottom" secondItem="vxH-GD-bzF" secondAttribute="bottom" id="fYc-Sv-Fzm"/>
+                                            <constraint firstAttribute="trailing" secondItem="h0p-3v-rTv" secondAttribute="trailing" constant="20" id="ihm-bn-Kr3"/>
+                                            <constraint firstItem="h0p-3v-rTv" firstAttribute="top" secondItem="GjQ-tF-fcz" secondAttribute="top" constant="15" id="t3W-Tx-n31"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Tk5-z5-O54">
+                                        <rect key="frame" x="0.0" y="348" width="374" height="348"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu SIP Justyna" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kzH-0U-EfB">
+                                                <rect key="frame" x="60" y="0.0" width="254.33333333333331" height="65.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                                </variation>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="lastBaseline" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-b9-iN3">
+                                                <rect key="frame" x="0.0" y="80.666666666666686" width="374" height="267.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0d-8I-9ks">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="75.666666666666686"/>
+                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                                        <state key="normal" title="Lista aktów prawnych">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="BillsListPressed:" destination="xUd-GD-dID" eventType="touchUpInside" id="VLF-xy-Jmc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-nc-Acg">
+                                                        <rect key="frame" x="0.0" y="95.666666666666686" width="374" height="76"/>
+                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                                        <state key="normal" title="Wyszukiwanie">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="SearchPressedBtn:" destination="xUd-GD-dID" eventType="touchUpInside" id="cHc-m0-zcF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKM-Q1-BV5">
+                                                        <rect key="frame" x="0.0" y="191.66666666666669" width="374" height="75.666666666666629"/>
+                                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                                        <state key="normal" title="Wyloguj się">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="LogoutPressed:" destination="xUd-GD-dID" eventType="touchUpInside" id="gc5-ar-8bm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="O0d-8I-9ks" firstAttribute="leading" secondItem="1Bu-b9-iN3" secondAttribute="leading" id="1xk-VJ-dan"/>
+                                                    <constraint firstItem="bKM-Q1-BV5" firstAttribute="leading" secondItem="1Bu-b9-iN3" secondAttribute="leading" id="CKV-9R-ORx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bKM-Q1-BV5" secondAttribute="trailing" id="UV5-kZ-UfH"/>
+                                                    <constraint firstItem="vlV-nc-Acg" firstAttribute="leading" secondItem="1Bu-b9-iN3" secondAttribute="leading" id="atk-3w-feD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="O0d-8I-9ks" secondAttribute="trailing" id="bQA-g5-WMg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vlV-nc-Acg" secondAttribute="trailing" id="esC-2d-IFc"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1Bu-b9-iN3" secondAttribute="trailing" id="I4r-ha-LUi"/>
+                                            <constraint firstItem="1Bu-b9-iN3" firstAttribute="leading" secondItem="Tk5-z5-O54" secondAttribute="leading" id="PcM-bA-jOk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Tk5-z5-O54" secondAttribute="trailing" id="NRV-BP-L7Q"/>
+                                    <constraint firstItem="Tk5-z5-O54" firstAttribute="leading" secondItem="0X3-Dn-srE" secondAttribute="leadingMargin" id="adv-Uv-tlE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99320524930953979" green="0.95828515291213989" blue="0.86619991064071655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0X3-Dn-srE" firstAttribute="leading" secondItem="7Hp-cd-CGb" secondAttribute="leadingMargin" id="Dbi-ZG-xDm"/>
+                            <constraint firstItem="0X3-Dn-srE" firstAttribute="top" secondItem="iZ1-nH-S1D" secondAttribute="bottom" id="Yho-de-ekp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0X3-Dn-srE" secondAttribute="bottom" constant="20" id="ey7-cw-egN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0X3-Dn-srE" secondAttribute="trailing" id="mNN-kP-Th3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="fwP-Pe-dqG" kind="showDetail" id="Ke0-R3-AGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uaa-m0-dNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614.49275362318849" y="-276.35869565217394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lge-vT-aT0">
+            <objects>
+                <navigationController id="fwP-Pe-dqG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PxZ-cZ-Vbw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s6s-Bm-Ecx" kind="relationship" relationship="rootViewController" id="EiD-fE-puV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTS-HU-kze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="-276"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="iPi-yE-4xh">
+            <objects>
+                <viewController id="s6s-Bm-Ecx" customClass="SearchVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gSi-qu-MTj"/>
+                        <viewControllerLayoutGuide type="bottom" id="eh6-S3-TM8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntF-bm-Ij9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JgQ-0b-xae">
+                                <rect key="frame" x="20" y="79" width="374" height="215.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wyszukaj" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="NLV-lK-M57">
+                                        <rect key="frame" x="121.33333333333336" y="0.0" width="131.66666666666663" height="38.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                        <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tutaj wprowadź szukaną frazę" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="XKW-0E-iMT">
+                                        <rect key="frame" x="0.0" y="58.666666666666657" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="axn-TA-tj9"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOK-Ha-OY5">
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="374" height="37"/>
+                                        <color key="backgroundColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                        <state key="normal" title="Szukaj">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="BillsListPressed:" destination="xUd-GD-dID" eventType="touchUpInside" id="vNW-Zm-9GZ"/>
+                                            <action selector="SearchAction:" destination="s6s-Bm-Ecx" eventType="touchUpInside" id="oqS-rr-PoV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XKW-0E-iMT" secondAttribute="trailing" id="AB8-Dv-QIf"/>
+                                    <constraint firstItem="XKW-0E-iMT" firstAttribute="leading" secondItem="JgQ-0b-xae" secondAttribute="leading" id="TSQ-Hu-rtn"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="FOK-Ha-OY5" secondAttribute="trailing" id="U5p-vO-KPs"/>
+                                    <constraint firstItem="FOK-Ha-OY5" firstAttribute="leading" secondItem="JgQ-0b-xae" secondAttribute="leadingMargin" id="a5t-41-728"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JgQ-0b-xae" secondAttribute="trailing" id="Jn2-SC-5dy"/>
+                            <constraint firstItem="JgQ-0b-xae" firstAttribute="top" secondItem="gSi-qu-MTj" secondAttribute="bottom" constant="15" id="TCS-FG-Pea"/>
+                            <constraint firstItem="JgQ-0b-xae" firstAttribute="leading" secondItem="ntF-bm-Ij9" secondAttribute="leadingMargin" id="vZt-Xh-Rxn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SiD-E0-Ohq"/>
+                    <connections>
+                        <outlet property="SearchField" destination="XKW-0E-iMT" id="cBj-Cx-Qpk"/>
+                        <segue destination="6wO-ej-bMH" kind="show" identifier="SearchResults" action="showDetailViewController:sender:" id="Foa-dt-Im1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9C-b4-I0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2376.811594202899" y="-280.43478260869568"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="hCx-Oe-Zub">
+            <objects>
+                <viewController id="6wO-ej-bMH" customClass="ResultsVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xnM-Op-UE2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qdy-lO-IHz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LIb-X0-5ww">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-c7-djB">
+                                <rect key="frame" x="0.0" y="131" width="414" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wynik" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7EP-zO-JEf">
+                                    <rect key="frame" x="0.0" y="108" width="414" height="74"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="W7H-cz-FqE" customClass="SearchCell" customModule="SIP_Justyna" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W7H-cz-FqE" id="Ldr-Hl-nH6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wyniki wyszukiwania" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-4p-i0U">
+                                <rect key="frame" x="20" y="72" width="374" height="39"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99320524929999998" green="0.95828515290000005" blue="0.86619991060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qdy-lO-IHz" firstAttribute="top" secondItem="9ba-c7-djB" secondAttribute="bottom" id="LfV-6l-x9F"/>
+                            <constraint firstAttribute="trailing" secondItem="9ba-c7-djB" secondAttribute="trailing" id="QIZ-Dc-8zR"/>
+                            <constraint firstItem="gzu-4p-i0U" firstAttribute="trailing" secondItem="LIb-X0-5ww" secondAttribute="trailingMargin" id="Vkf-FU-yZ6"/>
+                            <constraint firstItem="gzu-4p-i0U" firstAttribute="top" secondItem="xnM-Op-UE2" secondAttribute="bottom" constant="8" id="XQo-tc-Md3"/>
+                            <constraint firstItem="9ba-c7-djB" firstAttribute="top" secondItem="gzu-4p-i0U" secondAttribute="bottom" constant="20" id="d7P-pA-jEP"/>
+                            <constraint firstItem="9ba-c7-djB" firstAttribute="leading" secondItem="LIb-X0-5ww" secondAttribute="leading" id="ndv-ZR-39v"/>
+                            <constraint firstItem="gzu-4p-i0U" firstAttribute="leading" secondItem="LIb-X0-5ww" secondAttribute="leadingMargin" id="z2G-kS-tUL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="jrZ-0O-tFY" kind="show" id="IsK-kG-ced"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jet-Fc-9fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3253.6231884057975" y="-280.43478260869568"/>
+        </scene>
+        <!--Show Results BillVC-->
+        <scene sceneID="1JI-gL-CW3">
+            <objects>
+                <viewController id="jrZ-0O-tFY" customClass="ShowResultsBillVC" customModule="SIP_Justyna" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Cr-xZ-zWa"/>
+                        <viewControllerLayoutGuide type="bottom" id="DLE-hP-mCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DTa-uP-l4N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HH-3q-zUo">
+                                <rect key="frame" x="0.0" y="146" width="414" height="589.33333333333326"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment content="Wczytywanie .....">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <attributedString key="attributedText">
+                                        <fragment content="Wczytywanie .....">
+                                            <attributes>
+                                                <font key="NSFont" size="48" name="Didot"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-t2-Icb">
+                                <rect key="frame" x="20" y="72" width="374" height="38.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99320524929999998" green="0.95828515290000005" blue="0.86619991060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iNF-t2-Icb" firstAttribute="top" secondItem="6Cr-xZ-zWa" secondAttribute="bottom" constant="8" id="0Fa-1F-c7b"/>
+                            <constraint firstItem="3HH-3q-zUo" firstAttribute="leading" secondItem="DTa-uP-l4N" secondAttribute="leading" id="5iM-Ws-8JH"/>
+                            <constraint firstItem="iNF-t2-Icb" firstAttribute="trailing" secondItem="DTa-uP-l4N" secondAttribute="trailingMargin" id="HhZ-NV-7Dq"/>
+                            <constraint firstAttribute="trailing" secondItem="3HH-3q-zUo" secondAttribute="trailing" id="NKM-0t-Nk1"/>
+                            <constraint firstItem="iNF-t2-Icb" firstAttribute="leading" secondItem="DTa-uP-l4N" secondAttribute="leadingMargin" id="eSj-wa-5n7"/>
+                            <constraint firstItem="3HH-3q-zUo" firstAttribute="top" secondItem="iNF-t2-Icb" secondAttribute="bottom" constant="20" id="qSS-OI-9eD"/>
+                            <constraint firstItem="DLE-hP-mCL" firstAttribute="top" secondItem="3HH-3q-zUo" secondAttribute="bottom" id="xIa-PM-QaA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klN-9l-1h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4191" y="-276"/>
         </scene>
         <!--Law TypesVC-->
         <scene sceneID="qdA-QY-Iv2">
@@ -200,7 +581,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tmb-TH-H10" id="gEF-br-a6J">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-n4-qdN">
@@ -277,7 +658,7 @@
                                 </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-Yd-vsU">
-                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="633.33333333333326"/>
+                                <rect key="frame" x="0.0" y="102.66666666666669" width="414" height="589.33333333333326"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
@@ -306,13 +687,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tfq-ue-gY2" firstAttribute="top" secondItem="g8e-Yd-vsU" secondAttribute="bottom" id="3yK-Ho-qwO"/>
-                            <constraint firstItem="aZO-C1-Y7Z" firstAttribute="top" secondItem="d3W-mo-aIt" secondAttribute="bottom" id="H0L-f6-2es"/>
                             <constraint firstItem="aZO-C1-Y7Z" firstAttribute="trailing" secondItem="eI7-nd-8Pj" secondAttribute="trailingMargin" id="IIx-zq-2II"/>
                             <constraint firstAttribute="trailing" secondItem="g8e-Yd-vsU" secondAttribute="trailing" id="J5l-rt-riF"/>
+                            <constraint firstItem="aZO-C1-Y7Z" firstAttribute="top" secondItem="d3W-mo-aIt" secondAttribute="bottom" id="LDU-6U-jvk"/>
                             <constraint firstItem="g8e-Yd-vsU" firstAttribute="top" secondItem="aZO-C1-Y7Z" secondAttribute="bottom" id="MaY-v1-k01"/>
                             <constraint firstItem="g8e-Yd-vsU" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leading" id="ZjD-Tm-P8e"/>
                             <constraint firstItem="aZO-C1-Y7Z" firstAttribute="leading" secondItem="eI7-nd-8Pj" secondAttribute="leadingMargin" id="jjh-0q-f1n"/>
+                            <constraint firstItem="tfq-ue-gY2" firstAttribute="top" secondItem="g8e-Yd-vsU" secondAttribute="bottom" id="kvN-f6-HdG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -523,7 +904,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FxF-o4-59C" id="qYD-7q-7mP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-Lz-6zM">
@@ -592,6 +973,6 @@
         <image name="justitia" width="1920" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ji0-A5-Jus"/>
+        <segue reference="wd6-xW-QYw"/>
     </inferredMetricsTieBreakers>
 </document>

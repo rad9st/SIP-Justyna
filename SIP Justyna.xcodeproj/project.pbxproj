@@ -19,6 +19,11 @@
 		157AB2B01E258F1600D02256 /* SIP_Justyna.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AB2AE1E258F1600D02256 /* SIP_Justyna.xcdatamodeld */; };
 		157AB2B21E258F1600D02256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B11E258F1600D02256 /* Assets.xcassets */; };
 		157AB2B51E258F1600D02256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AB2B31E258F1600D02256 /* LaunchScreen.storyboard */; };
+		157E9CAD1E33C814009C5DF9 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E9CAC1E33C814009C5DF9 /* MenuVC.swift */; };
+		157E9CAF1E33E2C3009C5DF9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E9CAE1E33E2C3009C5DF9 /* SearchVC.swift */; };
+		157E9CB11E33E32A009C5DF9 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E9CB01E33E32A009C5DF9 /* ResultsVC.swift */; };
+		157E9CB31E33E3A6009C5DF9 /* ShowResultsBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E9CB21E33E3A6009C5DF9 /* ShowResultsBillVC.swift */; };
+		157E9CB51E33FD65009C5DF9 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E9CB41E33FD65009C5DF9 /* SearchCell.swift */; };
 		15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B495691E2A79D300355A28 /* LawTypes.swift */; };
 		15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */; };
 		15FE077B1E2ECF3E00CF8CBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15FE077A1E2ECF3E00CF8CBF /* GoogleService-Info.plist */; };
@@ -40,6 +45,11 @@
 		157AB2B11E258F1600D02256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AB2B41E258F1600D02256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AB2B61E258F1600D02256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157E9CAC1E33C814009C5DF9 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		157E9CAE1E33E2C3009C5DF9 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		157E9CB01E33E32A009C5DF9 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		157E9CB21E33E3A6009C5DF9 /* ShowResultsBillVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowResultsBillVC.swift; sourceTree = "<group>"; };
+		157E9CB41E33FD65009C5DF9 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		15B495691E2A79D300355A28 /* LawTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypes.swift; sourceTree = "<group>"; };
 		15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawTypesCell.swift; sourceTree = "<group>"; };
 		15FE077A1E2ECF3E00CF8CBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -106,11 +116,15 @@
 		157AB2BC1E258F5500D02256 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				157E9CAC1E33C814009C5DF9 /* MenuVC.swift */,
 				155DACC71E2DDE3C008217AD /* BillsVC.swift */,
 				157327311E29AAB3009CEB51 /* LawTypesVC.swift */,
 				155753461E272CBD00E8E32F /* RegUsersVC.swift */,
 				157AB2A91E258F1600D02256 /* LoginVC.swift */,
 				157327331E29AACD009CEB51 /* BillVC.swift */,
+				157E9CAE1E33E2C3009C5DF9 /* SearchVC.swift */,
+				157E9CB01E33E32A009C5DF9 /* ResultsVC.swift */,
+				157E9CB21E33E3A6009C5DF9 /* ShowResultsBillVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -129,6 +143,7 @@
 				15B4956B1E2A8B7100355A28 /* LawTypesCell.swift */,
 				155DACC51E2DC95E008217AD /* BillCell.swift */,
 				155DACC31E2DC917008217AD /* Bill.swift */,
+				157E9CB41E33FD65009C5DF9 /* SearchCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,14 +283,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				155753471E272CBD00E8E32F /* RegUsersVC.swift in Sources */,
+				157E9CB51E33FD65009C5DF9 /* SearchCell.swift in Sources */,
 				157327341E29AACD009CEB51 /* BillVC.swift in Sources */,
 				15B4956A1E2A79D300355A28 /* LawTypes.swift in Sources */,
 				15B4956C1E2A8B7100355A28 /* LawTypesCell.swift in Sources */,
+				157E9CB31E33E3A6009C5DF9 /* ShowResultsBillVC.swift in Sources */,
 				155DACC81E2DDE3C008217AD /* BillsVC.swift in Sources */,
+				157E9CAD1E33C814009C5DF9 /* MenuVC.swift in Sources */,
 				155DACC61E2DC95E008217AD /* BillCell.swift in Sources */,
+				157E9CB11E33E32A009C5DF9 /* ResultsVC.swift in Sources */,
 				157327321E29AAB3009CEB51 /* LawTypesVC.swift in Sources */,
 				157AB2B01E258F1600D02256 /* SIP_Justyna.xcdatamodeld in Sources */,
 				155DACC41E2DC917008217AD /* Bill.swift in Sources */,
+				157E9CAF1E33E2C3009C5DF9 /* SearchVC.swift in Sources */,
 				157AB2AA1E258F1600D02256 /* LoginVC.swift in Sources */,
 				157AB2A81E258F1600D02256 /* AppDelegate.swift in Sources */,
 			);
