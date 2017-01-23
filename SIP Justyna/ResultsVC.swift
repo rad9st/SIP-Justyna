@@ -23,7 +23,7 @@ class ResultsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return urlResults
         }
         set {
-            urlResults = "http://json.j.pl/wp-json/wp/v2/posts?search=\"\(newValue)\"&&fields=id,title.rendered"
+            urlResults = "http://json.j.pl/wp-json/wp/v2/posts?search=%22\(newValue)%22&&fields=id,title.rendered"
         }
     }
     
@@ -31,8 +31,9 @@ class ResultsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(UrlResults)
-        JsonDataGet(url: UrlResults)
+        let url = UrlResults
+        print(url)
+        JsonDataGet(url: url)
         
         
         ResultsTV.delegate = self
@@ -60,29 +61,30 @@ class ResultsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return reasultsArrayTV.count
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        
-//        let resType = reasultsArrayTV[indexPath.row]
-//        
-//        performSegue(withIdentifier: "ReasultShow", sender: resType)
-//        
-//        
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let resType = reasultsArrayTV[indexPath.row]
+        
+        performSegue(withIdentifier: "ReasultShow", sender: resType)
+        
+        
+    }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? BillVC{
-//            
-//            if let bill = sender as? Bill{
-//                destination.BillsLet = bill
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ShowResultsBillVC{
+            
+            if let bill = sender as? Bill{
+                destination.BillsLet = bill
+            }
+        }
+    }
     
     
     func JsonDataGet(url: String){
         Alamofire.request(url).responseJSON(completionHandler: {
             response in
             self.parseData(JSONData: response.data!)
+            
         }
             
         )
@@ -93,14 +95,12 @@ class ResultsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         let json = JSON(data: JSONData)
-        print(json)
         for item in 0..<json.count{
             if let object1 = json[item].dictionary{
                 let id = object1["id"]?.intValue
                 if let title1 = object1["title"]?.dictionary{
                     let title2 = title1["rendered"]?.stringValue
                     if let billTemp:Bill = Bill.init(bill: id!, billTitle: title2!){
-                        print(billTemp)
                         reasultsArrayTV.append(billTemp)
                     }
                 }

@@ -16,11 +16,14 @@ class SearchVC: UIViewController {
     
     var userSearchText: String!;
 
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
 
     @IBAction func SearchAction(_ sender: Any) {
         
@@ -43,5 +46,8 @@ class SearchVC: UIViewController {
         }
     }
     
+    @IBAction func MenuBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "MenuBack", sender: nil)
+    }
 
 }

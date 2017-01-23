@@ -17,6 +17,7 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var lawTypesTV: UITableView!
     
     
+    
     var lawTypes = [LawTypes]()
     
     typealias JsonObjStringAny = [String:AnyObject]
@@ -101,16 +102,23 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
     }
     
-    @IBAction func LogoutBtnPressed(_ sender: Any) {
+    @IBAction func MenuBtnPress(_ sender: Any) {
         
-        let firebaseAuth = FIRAuth.auth()
-        do {
-            try firebaseAuth?.signOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-        performSegue(withIdentifier: "LogOut", sender: nil)
+        performSegue(withIdentifier: "MenuShow", sender: nil)
     }
+    
+    
+    
+//    @IBAction func LogoutBtnPressed(_ sender: Any) {
+//        
+//        let firebaseAuth = FIRAuth.auth()
+//        do {
+//            try firebaseAuth?.signOut()
+//        } catch let signOutError as NSError {
+//            print ("Error signing out: %@", signOutError)
+//        }
+//        performSegue(withIdentifier: "LogOut", sender: nil)
+//    }
     
     
 }
