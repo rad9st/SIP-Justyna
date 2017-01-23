@@ -98,6 +98,7 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         Alamofire.request(url).responseJSON(completionHandler: {
             response in
             self.parseData(JSONData: response.data!)
+            
         }
             
         )
@@ -108,7 +109,7 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         let json = JSON(data: JSONData)
-        
+        print(json)
         for item in 0..<json.count{
             if let object1 = json[item].dictionary{
                 

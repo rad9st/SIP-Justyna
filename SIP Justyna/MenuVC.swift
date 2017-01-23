@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MenuVC: UIViewController {
 
@@ -19,17 +20,22 @@ class MenuVC: UIViewController {
     }
 
     @IBAction func BillsListPressed(_ sender: Any) {
-        
+        performSegue(withIdentifier: "TagsList", sender: nil)
     }
     
     @IBAction func SearchPressedBtn(_ sender: Any) {
+        performSegue(withIdentifier: "SearchMenu", sender: nil)
     }
     
     @IBAction func LogoutPressed(_ sender: Any) {
-        
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        performSegue(withIdentifier: "LogoutSegue", sender: nil)
     }
-    
 
     
-
-}
+    }

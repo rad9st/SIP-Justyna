@@ -164,7 +164,7 @@
                         <outlet property="logBtn" destination="d0T-U7-wQc" id="WJ0-8O-VOI"/>
                         <outlet property="passwordTF" destination="ui7-40-34W" id="BOT-91-TRe"/>
                         <segue destination="MtM-tT-GHn" kind="showDetail" identifier="registration" action="showViewController:sender:" id="Vu1-31-SpQ"/>
-                        <segue destination="g0a-Ys-6ah" kind="showDetail" identifier="LoggedIn" id="G7J-Vj-9ch"/>
+                        <segue destination="xUd-GD-dID" kind="showDetail" identifier="LoggedIn" id="xCX-eX-R1C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -319,7 +319,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="fwP-Pe-dqG" kind="showDetail" id="Ke0-R3-AGa"/>
+                        <segue destination="fwP-Pe-dqG" kind="showDetail" identifier="SearchMenu" id="Ke0-R3-AGa"/>
+                        <segue destination="g0a-Ys-6ah" kind="showDetail" identifier="TagsList" id="I31-V2-VR0"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="LogoutSegue" id="TjK-7F-nIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uaa-m0-dNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -439,22 +441,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-c7-djB">
                                 <rect key="frame" x="0.0" y="131" width="414" height="605"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wynik" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7EP-zO-JEf">
-                                    <rect key="frame" x="0.0" y="108" width="414" height="74"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="W7H-cz-FqE" customClass="SearchCell" customModule="SIP_Justyna" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="80" id="W7H-cz-FqE" customClass="SearchCell" customModule="SIP_Justyna" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W7H-cz-FqE" id="Ldr-Hl-nH6">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wynik" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-zO-JEf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.95686274510000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7EP-zO-JEf" firstAttribute="leading" secondItem="Ldr-Hl-nH6" secondAttribute="leading" id="GWw-Ki-pj2"/>
+                                                <constraint firstItem="7EP-zO-JEf" firstAttribute="top" secondItem="Ldr-Hl-nH6" secondAttribute="top" id="LRd-ob-DIo"/>
+                                                <constraint firstAttribute="bottom" secondItem="7EP-zO-JEf" secondAttribute="bottom" id="TiW-Nq-XOC"/>
+                                                <constraint firstAttribute="trailing" secondItem="7EP-zO-JEf" secondAttribute="trailing" id="anP-hw-vGt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelReasult" destination="7EP-zO-JEf" id="Flv-aT-idH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -480,7 +492,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="jrZ-0O-tFY" kind="show" id="IsK-kG-ced"/>
+                        <outlet property="ResultsTV" destination="9ba-c7-djB" id="Wpv-L2-6qw"/>
+                        <segue destination="jrZ-0O-tFY" kind="show" identifier="ReasultShow" id="IsK-kG-ced"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jet-Fc-9fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -527,7 +540,7 @@
                                 </variation>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akty Prawne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-t2-Icb">
-                                <rect key="frame" x="20" y="72" width="374" height="38.666666666666671"/>
+                                <rect key="frame" x="20" y="72" width="374" height="39"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="31"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.2156862745" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -973,6 +986,6 @@
         <image name="justitia" width="1920" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wd6-xW-QYw"/>
+        <segue reference="TjK-7F-nIO"/>
     </inferredMetricsTieBreakers>
 </document>

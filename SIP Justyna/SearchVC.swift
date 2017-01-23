@@ -23,8 +23,15 @@ class SearchVC: UIViewController {
     }
 
     @IBAction func SearchAction(_ sender: Any) {
+        
         userSearchText = SearchField.text
-        performSegue(withIdentifier: "SearchResults", sender: userSearchText)
+        
+        if userSearchText != nil{
+            performSegue(withIdentifier: "SearchResults", sender: userSearchText)
+        }
+        else{
+            print("pole nie może być puste")
+        }
         
     }
     
