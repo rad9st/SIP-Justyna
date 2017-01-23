@@ -120,10 +120,11 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     if let billTemp:Bill = Bill.init(bill: id!, billTitle: title2!){
                         
                         billsArrayTV.append(billTemp)
+                        BillsTV.reloadData()
                     }
                 }
             }
-            BillsTV.reloadData()
+            //BillsTV.reloadData()
         }
         
         

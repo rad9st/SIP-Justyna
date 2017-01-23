@@ -36,7 +36,7 @@ class RegUsersVC: UIViewController {
             (user, error) in
                 
                 if error != nil {
-                    print(error!.localizedDescription)
+                    self.showError(error: error!.localizedDescription)
                 }
                 else{
                     print("User created")
@@ -47,6 +47,14 @@ class RegUsersVC: UIViewController {
             })
         }
         
+        
+    }
+    
+    func showError(error:String){
+        let errorPopUp = UIAlertController(title: "Wystąpił błąd", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        
+        errorPopUp.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)}))
+        present(errorPopUp, animated: true, completion: nil)
         
     }
     
