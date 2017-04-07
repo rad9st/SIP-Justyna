@@ -47,7 +47,10 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         UrlBills = LawTypeObj.PostId.description
         
+        
+        
         JsonDataGet(url: UrlBills)
+        
         
         BillsTV.delegate = self
         BillsTV.dataSource = self
@@ -97,9 +100,12 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func JsonDataGet(url: String){
         Alamofire.request(url).responseJSON(completionHandler: {
             response in
-            self.parseData(JSONData: response.data!)
+            if response.data != nil{
+                
+                self.parseData(JSONData: response.data!)
             
-        }
+            }
+            }
             
         )
     }
@@ -129,6 +135,15 @@ class BillsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
+    
+    func showError(error:String){
+                let errorPopUp = UIAlertController(title: "Wystąpił błąd", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        
+                errorPopUp.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)}))
+                present(errorPopUp, animated: true, completion: nil)
+                
+            }
+
 
 }
     

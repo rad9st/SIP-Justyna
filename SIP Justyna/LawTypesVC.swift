@@ -27,7 +27,11 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        noInternet()
+        
         JsonDataGet(url: urlString)
+        
         
 
         lawTypesTV.delegate = self
@@ -63,9 +67,12 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func JsonDataGet(url: String){
-        Alamofire.request(url).responseJSON(completionHandler: {
+            Alamofire.request(url).responseJSON(completionHandler: {
             response in
-            self.parseData(JSONData: response.data!)
+                if (response.data != nil){
+                
+                self.parseData(JSONData: response.data!)
+                }
         }
             
         )
@@ -107,6 +114,20 @@ class LawTypesVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         performSegue(withIdentifier: "MenuShow", sender: nil)
     }
     
+    func showError(error:String){
+        let errorPopUp = UIAlertController(title: "Wystąpił błąd", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        
+        errorPopUp.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)}))
+        present(errorPopUp, animated: true, completion: nil)
+        
+    }
+    
+    // create UIViewAlert if there is no internet connection
+    func noInternet(){
+        if CheckInternetEnable.isConnectedToNetwork() == false{
+            self.present(UIAlertCreationNoInternet(), animated: true, completion: nil)
+        }
+    }
     
     
 //    @IBAction func LogoutBtnPressed(_ sender: Any) {

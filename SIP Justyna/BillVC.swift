@@ -50,9 +50,16 @@ class BillVC: UIViewController {
     func JsonDataGet(url: String){
         Alamofire.request(url).responseJSON(completionHandler: {
             response in
+            print(response.data)
+            if response.data != nil{
+            
             self.parseData(JSONData: response.data!)
         }
-            
+            else{
+                let error:String = "Nie można pobrać danych, proszę sprawdzić połoczenie z internetem"
+                self.showError(error: error)
+            }
+        }
         )
     }
     
@@ -85,5 +92,14 @@ class BillVC: UIViewController {
         }
         return nil
     }
+    
+    func showError(error:String){
+        let errorPopUp = UIAlertController(title: "Wystąpił błąd", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        
+        errorPopUp.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)}))
+        present(errorPopUp, animated: true, completion: nil)
+        
+    }
+    
     
 }

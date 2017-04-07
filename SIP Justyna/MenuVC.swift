@@ -26,16 +26,21 @@ class MenuVC: UIViewController {
     @IBAction func SearchPressedBtn(_ sender: Any) {
         performSegue(withIdentifier: "SearchMenu", sender: nil)
     }
-    
-    @IBAction func LogoutPressed(_ sender: Any) {
-        let firebaseAuth = FIRAuth.auth()
-        do {
-            try firebaseAuth?.signOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-        performSegue(withIdentifier: "LogoutSegue", sender: nil)
+    @IBAction func InfoLawBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "infolegal", sender: nil)
     }
+    
+//    @IBAction func LogoutPressed(_ sender: Any) {
+//        let firebaseAuth = FIRAuth.auth()
+//        do {
+//            try firebaseAuth?.signOut()
+//        } catch let signOutError as NSError {
+//            print ("Error signing out: %@", signOutError)
+//        }
+//        performSegue(withIdentifier: "LogoutSegue", sender: nil)
+//    }
+    
+    
 
     
     }
