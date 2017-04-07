@@ -1,0 +1,102 @@
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "0Da-JA-q5c"; */
+"0Da-JA-q5c.title" = "Menu";
+
+/* Class = "UILabel"; text = "Logowanie do systemu"; ObjectID = "41L-Uv-NaJ"; */
+"41L-Uv-NaJ.text" = "Logowanie do systemu";
+
+/* Class = "UILabel"; text = "Wynik"; ObjectID = "7EP-zO-JEf"; */
+"7EP-zO-JEf.text" = "Wynik";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "EbS-i9-CDk"; */
+"EbS-i9-CDk.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Szukaj"; ObjectID = "FOK-Ha-OY5"; */
+"FOK-Ha-OY5.normalTitle" = "Szukaj";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jt0-n4-qdN"; */
+"Jt0-n4-qdN.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "K5u-xI-6Q4"; */
+"K5u-xI-6Q4.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Rejestracja"; ObjectID = "MEr-wz-SGU"; */
+"MEr-wz-SGU.normalTitle" = "Rejestracja";
+
+/* Class = "UITextField"; placeholder = "hasło"; ObjectID = "NE7-D0-wis"; */
+"NE7-D0-wis.placeholder" = "hasło";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NHx-Lz-6zM"; */
+"NHx-Lz-6zM.text" = "Label";
+
+/* Class = "UILabel"; text = "Wyszukaj"; ObjectID = "NLV-lK-M57"; */
+"NLV-lK-M57.text" = "Wyszukaj";
+
+/* Class = "UIButton"; normalTitle = "Lista aktów prawnych"; ObjectID = "O0d-8I-9ks"; */
+"O0d-8I-9ks.normalTitle" = "Lista aktów prawnych";
+
+/* Class = "UIButton"; normalTitle = "Zarejestruj się"; ObjectID = "O2H-zT-8o0"; */
+"O2H-zT-8o0.normalTitle" = "Zarejestruj się";
+
+/* Class = "UILabel"; text = "Informacje prawne"; ObjectID = "S8H-ON-Ics"; */
+"S8H-ON-Ics.text" = "Informacje prawne";
+
+/* Class = "UITextField"; placeholder = "Tutaj wprowadź szukaną frazę"; ObjectID = "XKW-0E-iMT"; */
+"XKW-0E-iMT.placeholder" = "Tutaj wprowadź szukaną frazę";
+
+/* Class = "UILabel"; text = "System Informacji Prawnej Justyna"; ObjectID = "XPd-FH-mKQ"; */
+"XPd-FH-mKQ.text" = "System Informacji Prawnej Justyna";
+
+/* Class = "UILabel"; text = "System Informacji Prawnej Justyna"; ObjectID = "YoI-fz-clC"; */
+"YoI-fz-clC.text" = "System Informacji Prawnej Justyna";
+
+/* Class = "UILabel"; text = "Akty Prawne"; ObjectID = "aZO-C1-Y7Z"; */
+"aZO-C1-Y7Z.text" = "Akty Prawne";
+
+/* Class = "UIButton"; normalTitle = "Informacje o aplikacji"; ObjectID = "bKM-Q1-BV5"; */
+"bKM-Q1-BV5.normalTitle" = "Informacje o aplikacji";
+
+/* Class = "UIButton"; normalTitle = "Zaloguj"; ObjectID = "d0T-U7-wQc"; */
+"d0T-U7-wQc.normalTitle" = "Zaloguj";
+
+/* Class = "UIButton"; normalTitle = "Wróć"; ObjectID = "d9E-Wc-gaL"; */
+"d9E-Wc-gaL.normalTitle" = "Wróć";
+
+/* Class = "UILabel"; text = "Akty prawne"; ObjectID = "dlJ-ge-YNr"; */
+"dlJ-ge-YNr.text" = "Akty prawne";
+
+/* Class = "UILabel"; text = "Działy"; ObjectID = "dxE-tz-Elb"; */
+"dxE-tz-Elb.text" = "Działy";
+
+/* Class = "UILabel"; text = "Wyniki wyszukiwania"; ObjectID = "gzu-4p-i0U"; */
+"gzu-4p-i0U.text" = "Wyniki wyszukiwania";
+
+/* Class = "UILabel"; text = "System Informacji Prawnej Justyna"; ObjectID = "h0p-3v-rTv"; */
+"h0p-3v-rTv.text" = "System Informacji Prawnej Justyna";
+
+/* Class = "UILabel"; text = "Akty Prawne"; ObjectID = "iNF-t2-Icb"; */
+"iNF-t2-Icb.text" = "Akty Prawne";
+
+/* Class = "UITextField"; placeholder = "powtórz hasło"; ObjectID = "jBk-72-1Ch"; */
+"jBk-72-1Ch.placeholder" = "powtórz hasło";
+
+/* Class = "UILabel"; text = "Menu SIP Justyna"; ObjectID = "kzH-0U-EfB"; */
+"kzH-0U-EfB.text" = "Menu SIP Justyna";
+
+/* Class = "UITextField"; placeholder = "e-mail"; ObjectID = "pV9-u1-ZDB"; */
+"pV9-u1-ZDB.placeholder" = "e-mail";
+
+/* Class = "UITextField"; placeholder = "e-mail"; ObjectID = "qF7-2C-TQ2"; */
+"qF7-2C-TQ2.placeholder" = "e-mail";
+
+/* Class = "UILabel"; text = "Podaj dane"; ObjectID = "qdb-Jd-wGj"; */
+"qdb-Jd-wGj.text" = "Podaj dane";
+
+/* Class = "UIButton"; normalTitle = "Wróć do menu"; ObjectID = "u5x-xZ-b2N"; */
+"u5x-xZ-b2N.normalTitle" = "Wróć do menu";
+
+/* Class = "UITextField"; placeholder = "hasło"; ObjectID = "ui7-40-34W"; */
+"ui7-40-34W.placeholder" = "hasło";
+
+/* Class = "UIButton"; normalTitle = "Wyszukiwanie"; ObjectID = "vlV-nc-Acg"; */
+"vlV-nc-Acg.normalTitle" = "Wyszukiwanie";

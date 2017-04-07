@@ -50,7 +50,7 @@ class BillVC: UIViewController {
     func JsonDataGet(url: String){
         Alamofire.request(url).responseJSON(completionHandler: {
             response in
-            print(response.data)
+            
             if response.data != nil{
             
             self.parseData(JSONData: response.data!)
